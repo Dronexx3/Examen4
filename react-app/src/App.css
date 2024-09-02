@@ -1,0 +1,80 @@
+/* Estilo global para la aplicación */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para el contenedor principal */
+.app {
+  text-align: center;
+}
+
+/* Estilo para el encabezado */
+.app-header {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2em;
+  color: #007bff;
+}
+
+/* Estilo para el campo de búsqueda y botón */
+.search-input {
+  padding: 10px;
+  font-size: 1em;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para el contenido principal */
+.app-main {
+  padding: 20px;
+}
+
+/* Estilo para la lista de recomendaciones */
+.recommendation-list {
+  list-style: none;
+  padding: 0;
+}
+
+.recommendation-item {
+  background-color: white;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.recommendation-item h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.recommendation-item p {
+  margin: 5px 0;
+  color: #555;
+}
+
