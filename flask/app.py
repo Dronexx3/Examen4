@@ -11,7 +11,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 # Inicializar Flask
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "*"}}) # Permitir solicitudes desde http://localhost:4000
+CORS(app, resources={r"/*": {"origins": "*"}}) 
 
 # Descargar recursos necesarios
 nltk.download('stopwords')

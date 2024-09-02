@@ -32,3 +32,4 @@
 /home/dronexx/EmpresarialesAv/exam04/apilibros/obj/Debug/net8.0/apilibros.genruntimeconfig.cache
 /home/dronexx/EmpresarialesAv/exam04/apilibros/obj/Debug/net8.0/ref/apilibros.dll
 /home/dronexx/EmpresarialesAv/exam04/apilibros/bin/Debug/net8.0/RestSharp.dll
+/home/dronexx/EmpresarialesAv/exam04/apilibros/obj/Debug/net8.0/apilibros.sourcelink.json
