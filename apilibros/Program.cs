@@ -19,7 +19,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseCors(policy => policy
-    .WithOrigins("http://localhost:3001")
+    .WithOrigins("http://react-container:3001")
     .AllowAnyOrigin()
     .AllowAnyHeader()
     .AllowAnyMethod()
@@ -37,7 +37,7 @@ app.MapGet("/recommendations", async ([FromQuery] string keyword) =>
     try
     {
         using var httpClient = new HttpClient();
-        var response = await httpClient.GetAsync($"http://localhost:5000/recommendations?keyword={keyword}");
+        var response = await httpClient.GetAsync($"http://flask-container:5000/recommendations?keyword={keyword}");
 
         if (response.IsSuccessStatusCode)
         {

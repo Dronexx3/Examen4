@@ -7,7 +7,7 @@ function App() {
 
   const handleSearch = async () => {
     try {
-      const response = await fetch(`http://localhost:4000/recommendations?keyword=${keyword}`);
+      const response = await fetch(`http://csharp-container:4000/recommendations?keyword=${keyword}`);
       const data = await response.json();
 
       if (Array.isArray(data)) {
