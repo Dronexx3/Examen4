@@ -19,6 +19,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseCors(policy => policy
+    .WithOrigins("http://localhost:3001")
     .AllowAnyOrigin()
     .AllowAnyHeader()
     .AllowAnyMethod()
@@ -41,7 +42,6 @@ app.MapGet("/recommendations", async ([FromQuery] string keyword) =>
         if (response.IsSuccessStatusCode)
         {
             var jsonResponse = await response.Content.ReadAsStringAsync();
-            // Parse JSON response to ensure it's valid JSON
             var recommendations = JsonSerializer.Deserialize<object>(jsonResponse);
             return Results.Json(recommendations);
         }
